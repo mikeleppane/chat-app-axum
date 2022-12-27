@@ -1,0 +1,20 @@
+[package]
+name = "chat-app-axum"
+version = "0.1.0"
+edition = "2021"
+publish = false
+
+[lib]
+
+[dependencies]
+shuttle-service = { version = "0.8.0", features = ["web-axum"] }
+axum = { version = "0.6.1", features = ["ws"] }
+sync_wrapper = "0.1.1"
+tower-http = {version = "0.3.5", features = ["fs", "auth"]}
+tokio = {version = "1.22.0"}
+futures = "0.3.25"
+tokio-stream = "0.1.11"
+shuttle-secrets = "0.8.0"
+shuttle-static-folder = "0.8.0"
+serde_json = "1.0.91"
+serde = "1.0.151"
